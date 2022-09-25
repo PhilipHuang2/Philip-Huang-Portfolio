@@ -1,0 +1,40 @@
+:root{
+    --title-color: #417296; /* Midnight Blue*/
+    --secondary-background-color: #5885AF; /* Blue Grey*/
+    --background-color: #274472; /* Dark Blue */
+    --tertiary-color: #C3E0E5; /* Baby Blue */
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Abyssinica SIL', serif;
+
+}
+
+header {
+    background-color: var(--tertiary-color);
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    font-size: 36px;
+    border-style: groove;
+}
+
+h1 {
+    font-size: 48px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-weight:lighter;
+    text-align: center;
+}
+
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+nav > ul > li {
+    text-decoration: underline;
+    margin: 12px;
+}
