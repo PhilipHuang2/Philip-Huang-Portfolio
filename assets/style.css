@@ -52,11 +52,15 @@ nav > ul > li {
     margin: 12px;
 }
 
-#about-me {
+section {
     background-color: var(--background-color);
     padding: 0% 12% 0% 12%;
-
 }
+
+/* #about-me {
+   
+
+} */
 
 #about-me > p {
     font-size: 18px;
@@ -65,6 +69,50 @@ nav > ul > li {
 
     color: var(--tertiary-color);
 }
+/* Needs work to center it around the img */
+#main-work {
+    text-align: center;
+   
+}
+
+#main-work > img {
+    
+    border: 5px solid var(--title-color);
+    height:500px;
+    width:500px;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+#main-work > img:hover {
+    opacity: 1;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:flex-end;
+}
+
+.portfolio > img {
+    opacity: 0.5;
+    margin: 10px 0px 10px 0px;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border: 5px solid var(--title-color);
+    opacity: 0.4;
+}
+
+.portfolio > img:hover{
+    opacity: 1;
+}
+/* #work {
+    background-color: var(--background-color);
+    background-color: var(--background-color);
+    padding: 0% 12% 0% 12%;
+} */
 
 #contact-me {
     background-color: var(--tertiary-color);
