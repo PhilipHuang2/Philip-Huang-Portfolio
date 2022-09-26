@@ -26,7 +26,6 @@ header {
     border-radius: 50%;
     display: block;
 }
-
 h1 {
     font-size: 48px;
     padding-top: 1%;
@@ -38,11 +37,57 @@ h1 {
 
 nav > ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0% 15% 0% 15%;
     
 }
 
 nav > ul > li {
     text-decoration: underline;
     margin: 12px;
+}
+
+#about-me {
+    background-color: var(--background-color);
+    padding: 0% 12% 0% 12%;
+
+}
+
+#about-me > p {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 1% 0% 1% 0%;
+
+    color: var(--tertiary-color);
+}
+
+/* Taken from Section 02 in the Bootcamp repository */
+/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+/*common breakpoints for widths of devices:
+  • 320px — 480px: Mobile devices
+  • 481px — 768px: iPads, Tablets
+  • 769px — 1024px: Small screens, laptops
+  • 1025px — 1200px: Desktops, large screens*/
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+    #about-me  {
+        padding: 0% 10% 0% 10%;
+    }
+}
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+  #about-me {
+    padding: 0% 8% 0% 8%;
+  }
+  
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+  #about-me {
+    padding: 0% 5% 0% 5%;
+    
+  }
 }
