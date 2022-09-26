@@ -34,6 +34,11 @@ h1 {
     text-align: center;
 }
 
+#about-me h2 {
+    font-size: 36px;
+    color: var(--tertiary-color)
+}
+
 
 nav > ul {
     display: flex;
@@ -61,6 +66,23 @@ nav > ul > li {
     color: var(--tertiary-color);
 }
 
+#contact-me {
+    background-color: var(--tertiary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 10% 0% 10%;
+}
+#contact-me h2 {
+    font-size: 34px;
+    text-align: center;
+}
+
+#contact-me > div {
+    font-size: 24px;
+    vertical-align: baseline;
+}
+
 /* Taken from Section 02 in the Bootcamp repository */
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
 /*common breakpoints for widths of devices:
@@ -72,22 +94,44 @@ nav > ul > li {
 /* Tablets - header changes color */
 @media screen and (max-width: 992px) {
     #about-me  {
+        
         padding: 0% 10% 0% 10%;
+    }
+    #contact-me h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    #contact-me > div {
+        font-size: 18px;
     }
 }
 
 /* Large smartphones - navbar changes color */
 @media screen and (max-width: 768px) {
-  #about-me {
-    padding: 0% 8% 0% 8%;
-  }
-  
+    #about-me {
+        background-color: aqua;
+        padding: 0% 8% 0% 8%;
+    }
+    #contact-me h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+    #contact-me > div {
+        font-size: 12px;
+    }
 }
 
 /* Small smartphones - image placeholders change color */
 @media screen and (max-width: 576px) {
-  #about-me {
-    padding: 0% 5% 0% 5%;
-    
-  }
+    #about-me {
+        padding: 0% 5% 0% 5%;
+    }
+    #contact-me h2 {
+        font-size: 12px;
+        text-align: center;
+    }
+    #contact-me > div {
+        font-size: 8px;
+    }
 }
