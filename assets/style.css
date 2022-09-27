@@ -57,10 +57,6 @@ section {
     padding: 0% 12% 0% 12%;
 }
 
-/* #about-me {
-   
-
-} */
 
 #about-me > p {
     font-size: 18px;
@@ -68,36 +64,36 @@ section {
     padding: 1% 0% 1% 0%;
     color: var(--tertiary-color);
 }
-/* Needs work to center it around the img */
+
 #main-work {
     display: flex;
     justify-content: center;
    
 }
 
+/* Main-Work image CSS */
 #main-work > a > img {
     margin-top: 20px;
     border: 5px solid var(--title-color);
     height:400px;
     width:400px;
     object-fit: cover;
+    /* This line plus the img:hover selector below is how I acheive the highlight trick. */
     opacity: 0.8;
 }
-
-a:link { text-decoration: none; }
-
-
-a:visited { text-decoration: none; }
-
-
-a:hover { text-decoration: none; }
-
-
-a:active { text-decoration: none; }
 
 #main-work > a > img:hover {
     opacity: 1;
 }
+
+/* the 4 lines are for removing the underlines on the images text subtitles */
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+
+
 
 .portfolio {
     display: flex;
@@ -107,6 +103,7 @@ a:active { text-decoration: none; }
     align-items:flex-end;
 }
 
+/* CSS for the remaining portfolio */
 .portfolio > a > img {
     opacity: 0.5;
     margin: 10px 0px 10px 0px;
@@ -114,17 +111,13 @@ a:active { text-decoration: none; }
     width: 300px;
     object-fit: cover;
     border: 5px solid var(--title-color);
+    /* Setting the opacity to lower than the main image to highlight the main work */
     opacity: 0.4;
 }
 
 .portfolio > a > img:hover{
     opacity: 1;
 }
-/* #work {
-    background-color: var(--background-color);
-    background-color: var(--background-color);
-    padding: 0% 12% 0% 12%;
-} */
 
 #contact-me {
     background-color: var(--tertiary-color);
@@ -157,17 +150,6 @@ a:active { text-decoration: none; }
 .text-box:visited {
     text-decoration: none;
 }
-
-/* Taken from Section 02 in the Bootcamp repository */
-/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
-/*common breakpoints for widths of devices:
-  • 320px — 480px: Mobile devices
-  • 481px — 768px: iPads, Tablets
-  • 769px — 1024px: Small screens, laptops
-  • 1025px — 1200px: Desktops, large screens*/
-
-/* Tablets - header changes color */
-
 
 @media screen and (max-width: 992px) {
     header {
