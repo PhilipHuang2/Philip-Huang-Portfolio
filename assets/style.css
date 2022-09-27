@@ -71,20 +71,20 @@ section {
 }
 /* Needs work to center it around the img */
 #main-work {
-    text-align: center;
+    display: flex;
+    justify-content: center;
    
 }
 
-#main-work > img {
-    
+#main-work > a > img {
     border: 5px solid var(--title-color);
-    height:500px;
-    width:500px;
+    height:400px;
+    width:400px;
     object-fit: cover;
     opacity: 0.8;
 }
 
-#main-work > img:hover {
+#main-work > a > img:hover {
     opacity: 1;
 }
 
